@@ -1,0 +1,55 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(29, 27, 54);
+}
+
+.drumkit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    width: 100%;
+    height: 100%;
+    & button {
+        color: #fff;
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        font-size: 30px;
+        background-color: inherit;
+        &:active{
+            transform: scale(1.2);
+        }
+    }
+}
+.drumkit-kick {
+    border: 1px solid #03f7ff;
+    &:hover{
+        background-color: #03f7ff;
+        border: 1px solid #03f7ff;
+        box-shadow: 10px 10px 80px 6px #03f7ff;
+        transition: 0.1s;
+    }
+}
+.drumkit-snare {
+    border: 1px solid #00ff22;
+    &:hover{
+        background-color: #00ff22;
+        border: 1px solid #00ff22;
+        box-shadow: 10px 10px 80px 6px #00ff22;
+        transition: 0.1s;
+    }
+}
+.drumkit-hi-hat {
+    border: 1px solid #f038ff;
+    &:hover{
+        background-color: #f038ff;
+        color: #fff;
+        border: 1px solid #f038ff;
+        box-shadow: 10px 10px 80px 6px #f038ff;
+        transition: 0.1s;
+    }
+}
